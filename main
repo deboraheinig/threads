@@ -1,0 +1,60 @@
+#include<iostream>
+#include<stdlib.h>
+#include<time.h>
+using namespace std;
+
+int matriz1() {
+int a[4][4], i , j;
+ for( i = 0; i < 4; ++i)
+  {for( j = 0;  j < 4; ++j)
+     {a[i][j] = rand() % 100 + 1;}
+  }
+
+ for( i = 0; i < 4; ++i)
+  {for( j = 0; j < 4; ++j)
+    std::cout<<a[i][j]<<'\t';
+    std::cout<<'\n';
+
+ }
+    std::cout<<'\n';
+    std::cout<<"x"<<std::endl;
+    std::cout<<'\n';
+    std::cout<<"Matriz 2:"<<std::endl;
+
+     int b[4][4], k, l;
+     for( k = 0; k < 4; ++k)
+      {for( l = 0;  l < 4; ++l)
+         {b[k][l] = rand() % 100 + 1;}
+      }
+
+     for( k = 0; k < 4; ++k)
+      {for( l = 0; l < 4; ++l)
+
+    std::cout<<b[k][l]<<'\t';
+    std::cout<<'\n';
+     }
+
+    std::cout<<'\n';
+    int c[4][4], m, n, x;
+    std::cout<<"Multiplicação posicional:"<<std::endl;
+    for( i = 0; i < 4; ++i){
+        for( j = 0;  j < 4; ++j){
+            for( k = 0; k < 4; ++k){
+                for(l = 0; l < 4; ++l){
+                 c[m][n] = a[i][x]*b[x][j];
+                 std::cout<<c[m][n];
+                }}}}
+    return 0;
+}
+
+
+int main()
+{
+
+ srand(time(0));
+
+std::cout<<"Matriz 1:"<<std::endl;
+std::cout<<matriz1()<< std::endl;
+
+}
+
