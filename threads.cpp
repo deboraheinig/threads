@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+// R = Row
+// C = Column
+
 void fill4x4( int a[][4] ) {
     for( int r = 0; r < 4; r++ )
         for( int c = 0; c < 4; c++ )
@@ -32,6 +35,7 @@ void mult4x4( int a[][4], int b[][4], int d[][4], bool x ) {
     puts( "" ); show4x4( d );
 }
 
+
 int main()
 {
     srand(time(0));
@@ -47,6 +51,6 @@ int main()
 
     clock_t end = clock();
     time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("The time is %f seconds. ", time_spent);
+    printf("Foram gastos %f segundos.", time_spent);
     return 0;
 }
